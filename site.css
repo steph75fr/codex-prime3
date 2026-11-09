@@ -1,0 +1,6 @@
+/* Styles partagés, chargés localement sans dépendance tierce. */
+.site-footer{width:100%;border-top:1px solid #94a3b833;background:#101827;color:#e5e7eb;padding:22px 16px;font-family:Arial,Helvetica,sans-serif}
+.site-footer nav{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 22px}
+.site-footer a{color:#e5e7eb;text-decoration:underline;text-underline-offset:3px;font-size:14px;line-height:1.6}
+.site-footer a:hover{color:#bfdbfe}.site-footer a:focus-visible{outline:3px solid #93c5fd;outline-offset:3px}
+@media(max-width:600px){.site-footer nav{flex-direction:column;gap:8px}}
