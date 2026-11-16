@@ -2,5 +2,5 @@
   "name": "codex-prime3-api",
   "main": "index.js",
   "compatibility_date": "2026-11-16",
-  "r2_buckets": [{ "binding": "OUTILS_BUCKET", "bucket_name": "codex-prime3-data" }]
+  "r2_buckets": [{ "binding": "OUTILS_BUCKET", "bucket_name": "formation-s4-donnees-mon-groupe" }]
 }
