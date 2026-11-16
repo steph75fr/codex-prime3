@@ -79,7 +79,7 @@ async function allKeys(bucket,prefix){
 }
 async function readTool(env,id){
   const obj=await env.OUTILS_BUCKET.get(keyFor(id));
-  return obj?{item:await obj.json(),etag:obj.httpEtag}:null;
+  return obj?{item:await obj.json(),etag:obj.etag}:null;
 }
 async function handle(request,env){
   const u=new URL(request.url),path=u.pathname;
