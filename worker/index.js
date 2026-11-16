@@ -138,6 +138,25 @@ async function handle(request,env){
   }
   return fail("Route inconnue",404);
 }
+const SITE_ORIGIN="https://codex-prime3.pages.dev";
 export default {async fetch(request,env){
-  try{return await handle(request,env)}catch(e){console.error("Worker failure",e);return fail("Erreur interne",500)}
+  const origin=request.headers.get("Origin");
+  const allowed=origin===SITE_ORIGIN;
+  const cors=allowed?{
+    "Access-Control-Allow-Origin":SITE_ORIGIN,
+    "Access-Control-Allow-Credentials":"true",
+    "Access-Control-Allow-Methods":"GET, POST, PUT, OPTIONS",
+    "Access-Control-Allow-Headers":"Content-Type",
+    "Vary":"Origin"
+  }:{"Vary":"Origin"};
+  if(request.method==="OPTIONS"){
+    if(!allowed)return new Response(null,{status:403,headers:cors});
+    return new Response(null,{status:204,headers:{...cors,"Access-Control-Max-Age":"600"}});
+  }
+  if(origin&&!allowed)return new Response(JSON.stringify({error:"Origine non autorisée"}),{status:403,headers:{...headers,...cors}});
+  let response;
+  try{response=await handle(request,env)}catch(e){console.error("Worker failure",e);response=fail("Erreur interne",500)}
+  const combined=new Headers(response.headers);
+  for(const [k,v] of Object.entries(cors))combined.set(k,v);
+  return new Response(response.body,{status:response.status,headers:combined});
 }};
