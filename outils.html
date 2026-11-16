@@ -111,7 +111,7 @@ async function refresh(){
     }else{
       statusBox.textContent=canEdit?"R2 vide : utilisez « Initialiser R2 » une seule fois.":"R2 vide. Authentification nécessaire pour initialiser.";
     }
-    admin.firstChild.disabled=!canEdit||stored.tools.length>0;
+    admin.firstChild.disabled=!canEdit||stored.tools.length>=43;
     render();
   }catch(e){canEdit=false;statusBox.textContent="API inaccessible : catalogue local en lecture seule. "+e.message;render()}
 }
