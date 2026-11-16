@@ -2,6 +2,30 @@
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1020"><meta name="description" content="Annuaire interactif en français des outils de vibe coding, assistants de programmation, créateurs d'applications et outils de test."><title>Vibe Coding — Explorer les outils IA</title>
 <style>
 :root{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#e9eefc;background:#090e1a;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 80% 40% at 50% -10%,#223b72 0%,transparent 75%),#090e1a}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #86b8ff;outline-offset:3px}.wrap{max-width:1210px;margin:auto;padding:0 24px}.top{border-bottom:1px solid #ffffff16;background:#090e1acc}.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:20px}.logo{font-weight:850;letter-spacing:-.5px;font-size:20px}.logo span{color:#9bb7ff}.navlinks{display:flex;gap:17px;flex-wrap:wrap;font-size:13px;color:#acb8d4}.navlinks a:hover{color:#fff}.hero{padding:76px 0 37px}.eyebrow{color:#a6b9ff;font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:12px}h1{font-size:clamp(39px,6vw,74px);line-height:1.07;letter-spacing:-.055em;margin:15px 0 20px;max-width:850px}h1 em{font-style:normal;background:linear-gradient(95deg,#9fb6ff,#79e9df);background-clip:text;color:transparent}.subtitle{color:#b4c0d9;max-width:710px;line-height:1.75;font-size:17px}.heroLinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff29;border-radius:12px;padding:11px 15px;background:#ffffff0b;font-size:14px}.pill.primary{background:#7777f4;color:#fff;border-color:#7777f4;font-weight:750}.pill:hover{filter:brightness(1.18)}.stats{display:flex;gap:35px;flex-wrap:wrap;margin-top:42px;color:#aebbd6;font-size:13px}.stats strong{color:white;font-size:25px;display:block;margin-bottom:3px}.panel{background:#111b30;border:1px solid #ffffff1c;border-radius:18px;padding:20px;margin:20px 0 22px}.controls{display:grid;grid-template-columns:1fr 205px;gap:12px}.controls input,.controls select{width:100%;height:47px;padding:0 15px;border:1px solid #ffffff30;border-radius:11px;background:#0b1425;color:white;font-size:14px}.filters{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}button.filter{cursor:pointer;border:1px solid #ffffff24;background:#19263d;color:#ccd6ed;padding:9px 13px;border-radius:999px;font-size:12px}button.filter.active{background:#6979ef;color:white;border-color:#8795ff}.between{display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:24px 0 18px}.between h2{margin:0;font-size:24px;letter-spacing:-.03em}.muted{color:#98a8c8;font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.tool{display:flex;flex-direction:column;min-height:232px;padding:21px;border:1px solid #ffffff1d;background:linear-gradient(140deg,#17233b,#10192b);border-radius:18px;transition:transform .2s,border-color .2s}.tool:hover{transform:translateY(-3px);border-color:#8194fa77}.toolTop{display:flex;justify-content:space-between;align-items:start;gap:10px}.tool h3{font-size:19px;margin:0;letter-spacing:-.02em}.tag{border:1px solid #ffffff25;color:#c2cdfa;font-size:11px;border-radius:6px;padding:5px 8px;white-space:nowrap}.tool p{font-size:14px;color:#b6c4dc;line-height:1.6;flex:1;margin:16px 0}.access{font-size:12px;color:#9aafd1;margin-bottom:14px}.foot{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#8698b8;font-size:11px}.visit{color:#abb9ff;font-size:13px;font-weight:750}.note{border:1px solid #ffffff1b;background:#111a2a;border-radius:15px;padding:20px;color:#b2c1dd;line-height:1.65;font-size:13px;margin:35px 0}.note strong{color:white}.footer{padding:26px 0 45px;color:#8493b1;font-size:12px;border-top:1px solid #ffffff15}.footer a{text-decoration:underline}.empty{color:#b8c5df;padding:32px 0}@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:610px){.wrap{padding:0 16px}.nav{align-items:start;padding:20px 0;flex-direction:column}.hero{padding:45px 0 20px}.controls{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.stats{gap:20px}.tool{min-height:205px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+
+.toolActions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.action{cursor:pointer;border:1px solid #8194fa80;background:#24375b;color:#fff;border-radius:9px;padding:9px 10px;font:inherit;font-size:12px}
+.action:disabled{opacity:.45;cursor:not-allowed}
+.comments{border-top:1px solid #ffffff22;margin-top:12px;padding-top:10px;font-size:13px;color:#b6c4dc}
+.comments summary{cursor:pointer}
+.commentText{white-space:pre-wrap;overflow-wrap:anywhere}
+.apiStatus{padding:13px 0;color:#b6c4dc;font-size:13px}
+.adminActions{margin-bottom:10px}
+.editorDialog{width:min(700px,94vw);max-height:90vh;overflow:auto;border:1px solid #7a8ed6;border-radius:16px;padding:0;background:#111b30;color:#fff}
+.editorDialog::backdrop{background:#000b}
+.editorInner{padding:24px;display:grid;gap:13px}
+.editorHeader{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.editorHeader h2{font-size:20px}
+.editorField{display:grid;gap:6px;font-size:14px}
+.editorField input,.editorField textarea,.editorField select,.customRow input,.customRow select,.customRow textarea{width:100%;background:#0b1425;color:#fff;border:1px solid #ffffff55;border-radius:8px;padding:10px;font:inherit}
+.editorField textarea{min-height:95px}
+.editorField input[type="checkbox"],.customRow input[type="checkbox"]{width:auto}
+.customRow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0}
+.customRow input,.customRow textarea{flex:1;min-width:145px}
+.customRow strong{font-size:12px}
+.editorFeedback{color:#ffc2c2;white-space:pre-wrap}
+
 </style></head><body>
 <header class="top"><div class="wrap nav"><a class="logo" href="#">✦ Vibe<span>Coding</span> / Atlas</a><nav class="navlinks" aria-label="Navigation"><a href="#catalogue">Explorer les outils</a><a href="#conseils">Bien démarrer</a><a href="https://github.com/steph75fr/codex-prime3" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></nav></div></header>
 <main class="wrap"><section class="hero"><div class="eyebrow">Annuaire interactif · IA & développement</div><h1>De l’idée au code.<br><em>Trouvez le bon outil IA.</em></h1><p class="subtitle">Un panorama clair des assistants de programmation, générateurs d’applications, intégrations, outils de test et de déploiement. Recherchez, filtrez et consultez directement les projets.</p><div class="heroLinks"><a class="pill primary" href="#catalogue">Explorer le catalogue ↓</a><a class="pill" href="https://github.com/Scap-Mehdi/awesome-vibecoding" target="_blank" rel="noopener noreferrer">Consulter la source ↗</a></div><div class="stats"><div><strong>43</strong>outils du catalogue principal</div><div><strong>6</strong>catégories pratiques</div><div><strong>FR</strong>présentation en français</div></div></section>
@@ -10,8 +34,194 @@
 <footer class="footer"><div class="wrap">Sélection et liens : <a href="https://github.com/Scap-Mehdi/awesome-vibecoding" target="_blank" rel="noopener noreferrer">Scap-Mehdi/awesome-vibecoding</a> (licence CC0 pour sa compilation). Site de présentation indépendant · <a href="https://github.com/steph75fr/codex-prime3">Code du projet</a>.</div></footer>
 <script>
 "use strict";
-const groups=[{"label":"Code & édition","key":"code","entries":[{"name":"Aider","url":"https://github.com/Aider-AI/aider","type":"CLI","desc":"Assistant de programmation en terminal, avec Git et modèles locaux ou distants.","access":"Open-source client; API or local-model costs","verified":"2026-09-18","source":"GitHub"},{"name":"Claude Code","url":"https://code.claude.com/docs/en/overview","type":"CLI","desc":"Agent de programmation travaillant dans le terminal et sur les projets.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Cline","url":"https://github.com/cline/cline","type":"Outil","desc":"Agent pour éditeur, terminal et bureau pouvant manipuler fichiers et commandes.","access":"Client plus model provider; check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Cursor","url":"https://www.cursor.com/","type":"IDE","desc":"Éditeur de code avec agent IA pour coder, déboguer et relire.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Gemini CLI","url":"https://github.com/google-gemini/gemini-cli","type":"CLI","desc":"Agent open source en terminal avec accès par API ou environnement compatible.","access":"API/Vertex or eligible enterprise; no retired consumer route","verified":"2026-09-18","source":"GitHub"},{"name":"GitHub Copilot","url":"https://github.com/features/copilot","type":"Outil","desc":"Assistance au code et agents intégrés à GitHub et aux IDE.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Goose","url":"https://github.com/aaif-goose/goose","type":"CLI","desc":"Agent local extensible, disponible en terminal et sur bureau.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Kiro","url":"https://kiro.dev","type":"IDE","desc":"Environnement AWS axé sur spécifications, code et tests.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"OpenAI Codex CLI","url":"https://openai.com/codex/","type":"CLI","desc":"Agent de programmation OpenAI utilisable localement en terminal.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Pi","url":"https://github.com/earendil-works/pi","type":"CLI","desc":"Agent terminal extensible et intégrable dans d’autres outils.","access":"MIT client; model/provider terms separate","verified":"2026-09-18","source":"GitHub"}]},{"label":"Création d’applications et d’interfaces","key":"apps","entries":[{"name":"Bolt.new","url":"https://bolt.new/","type":"Web","desc":"Crée des applications web à partir de descriptions en langage naturel.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Dyad","url":"https://github.com/dyad-sh/dyad","type":"Desktop","desc":"Crée des applications sur votre ordinateur, avec fournisseurs de modèles au choix.","access":"Check pricing; local desktop app and model-provider costs.","verified":"2026-09-18","source":"GitHub"},{"name":"Lovable","url":"https://lovable.dev/","type":"Web","desc":"Génère des applications complètes avec intégration Supabase.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Onlook","url":"https://www.onlook.com/","type":"Web","desc":"Modifie visuellement des interfaces tout en conservant l’accès au code.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Replit","url":"https://replit.com/","type":"Web","desc":"Crée et fait évoluer des applications en ligne avec un agent.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"v0","url":"https://v0.app/","type":"Web","desc":"Génération d’interfaces et de composants React avec l’IA.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"}]},{"label":"Contexte, spécifications et intégrations","key":"context","entries":[{"name":"Caliber","url":"https://github.com/caliber-ai-org/ai-setup","type":"Outil","desc":"Génère et synchronise les configurations des agents de code.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Context7","url":"https://github.com/upstash/context7","type":"MCP","desc":"Fournit aux agents une documentation actualisée des bibliothèques.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Filesystem MCP","url":"https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem","type":"MCP","desc":"Donne à un agent un accès contrôlé aux fichiers du projet.","access":"Check pricing; reference implementation, not a production-ready guarantee","verified":"2026-09-18","source":"GitHub"},{"name":"GitHub MCP","url":"https://github.com/github/github-mcp-server","type":"MCP","desc":"Connecte les agents aux dépôts, tickets et demandes de modification.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Neon","url":"https://github.com/neondatabase/mcp-server-neon","type":"MCP","desc":"Connecte les agents aux bases de données Neon.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Notion MCP","url":"https://developers.notion.com/guides/mcp/overview","type":"MCP","desc":"Permet de lire et modifier le contenu Notion depuis un agent.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"OpenSpec","url":"https://github.com/Fission-AI/OpenSpec","type":"Outil","desc":"Cadre de développement guidé par des spécifications.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Supabase MCP","url":"https://github.com/supabase/mcp","type":"MCP","desc":"Relie les agents à la base et à la configuration Supabase.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"}]},{"label":"Tests, revue et sécurité","key":"quality","entries":[{"name":"Agent QA","url":"https://github.com/vostride/agent-qa","type":"MCP","desc":"Définit et exécute des tests web et mobile en langage naturel.","access":"FSL-1.1-ALv2; source-available with competing-use restriction; model costs","verified":"2026-09-18","source":"GitHub"},{"name":"Playwright MCP (Microsoft)","url":"https://github.com/microsoft/playwright-mcp","type":"MCP","desc":"Automatise un navigateur pour tester les interfaces.","access":"Apache-2.0 client; model terms separate","verified":"2026-09-18","source":"GitHub"},{"name":"PR-Agent","url":"https://github.com/The-PR-Agent/pr-agent","type":"Outil","desc":"Assistant communautaire de revue des pull requests.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Prbl","url":"https://getprbl.com","type":"Web","desc":"Recherche des vulnérabilités dans les applications ou dépôts.","access":"Free scan and GitHub Action; paid plans for rewriter and private repos; Python/JS/TS only","verified":"2026-09-23","source":"GitHub"},{"name":"Qodo","url":"https://www.qodo.ai","type":"Outil","desc":"Analyse et revue de code assistées par IA.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Semgrep MCP","url":"https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp","type":"MCP","desc":"Analyse statique de sécurité reliée aux agents.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Sentry","url":"https://github.com/getsentry/sentry-mcp","type":"MCP","desc":"Inspection des erreurs et diagnostic des incidents.","access":"Functional Source License; source-available; check hosted terms","verified":"2026-09-18","source":"GitHub"}]},{"label":"Déploiement et exécution","key":"delivery","entries":[{"name":"Cloudflare","url":"https://github.com/cloudflare/mcp-server-cloudflare","type":"MCP","desc":"Intégration MCP pour déploiement et gestion des ressources Cloudflare.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"E2B","url":"https://github.com/e2b-dev/E2B","type":"Outil","desc":"Environnement cloud isolé pour exécuter des agents.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Publish.my","url":"https://publish.my/","type":"Web","desc":"Publication de sites statiques par des agents.","access":"Free tier; static sites only; email activation","verified":"2026-09-18","source":"GitHub"},{"name":"XcodeBuildMCP","url":"https://github.com/getsentry/XcodeBuildMCP","type":"MCP","desc":"Construit, exécute et débogue des projets Apple.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"}]},{"label":"Espaces de travail et suivi","key":"operations","entries":[{"name":"Delta (Zed)","url":"https://delta.dev/","type":"Desktop","desc":"Espace collaboratif pour sessions d’agents et revue de modifications.","access":"Free during public beta; paid plans planned; model costs separate","verified":"2026-09-20","source":"GitHub"},{"name":"Duckweed","url":"https://github.com/MusicMaster4/Duckweed","type":"Desktop","desc":"Espace local réunissant agents, terminal et Git.","access":"Source-available; see license; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"llm.log","url":"https://github.com/lanesket/llm.log","type":"Outil","desc":"Analyse les coûts, jetons et traces des appels aux modèles.","access":"MIT; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Parallel Code","url":"https://github.com/johannesjo/parallel-code","type":"Desktop","desc":"Exécute des agents en parallèle dans des branches de travail isolées.","access":"MIT; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Shep","url":"https://github.com/shep-ai/shep","type":"CLI","desc":"Orchestre plusieurs agents jusqu’aux commits et pull requests.","access":"MIT client; agent subscription or API costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Superagent","url":"https://github.com/pungme/superagent-desktop","type":"Desktop","desc":"Espace macOS pour agents de code et outils de navigateur.","access":"MIT; macOS Apple Silicon; model subscription separate","verified":"2026-09-18","source":"GitHub"},{"name":"usage","url":"https://github.com/aqua5230/usage","type":"Desktop","desc":"Affiche les quotas d’agents IA sur Windows et macOS.","access":"AGPL-3.0; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Warp Terminal","url":"https://www.warp.dev/terminal","type":"Outil","desc":"Terminal orienté agents et workflows de développement.","access":"Terminal download; check AI usage pricing","verified":"2026-09-18","source":"GitHub"}]}];const all=groups.flatMap(g=>g.entries.map(t=>({...t,category:g.key,categoryLabel:g.label})));let selected="all";const el=id=>document.getElementById(id);const filters=el("filters");const make=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
-function buildFilters(){filters.replaceChildren();for(const g of [{key:"all",label:"Tous les outils"},...groups]){const b=make("button","filter"+(selected===g.key?" active":""),g.label);b.type="button";b.setAttribute("aria-pressed",String(selected===g.key));b.addEventListener("click",()=>{selected=g.key;buildFilters();render()});filters.append(b)}}
-function render(){const q=el("search").value.trim().toLocaleLowerCase("fr");const t=el("type").value;const shown=all.filter(x=>(selected==="all"||x.category===selected)&&(t==="all"||x.type===t)&&[x.name,x.desc,x.access,x.categoryLabel,x.type].join(" ").toLocaleLowerCase("fr").includes(q));el("count").textContent=shown.length+" résultat"+(shown.length>1?"s":"");el("empty").hidden=shown.length!==0;const fragment=document.createDocumentFragment();for(const x of shown){const article=make("article","tool");const head=make("div","toolTop");head.append(make("h3","",x.name),make("span","tag",x.type));article.append(head,make("p","",x.desc),make("div","access",x.access));const foot=make("div","foot");foot.append(make("span","",x.categoryLabel));const a=make("a","visit","Voir l’outil ↗");a.href=x.url;a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label","Ouvrir "+x.name+" dans un nouvel onglet");foot.append(a);article.append(foot);fragment.append(article)}el("results").replaceChildren(fragment)}
-el("search").addEventListener("input",render);el("type").addEventListener("change",render);buildFilters();render();
+const groups=[{"label":"Code & édition","key":"code","entries":[{"name":"Aider","url":"https://github.com/Aider-AI/aider","type":"CLI","desc":"Assistant de programmation en terminal, avec Git et modèles locaux ou distants.","access":"Open-source client; API or local-model costs","verified":"2026-09-18","source":"GitHub"},{"name":"Claude Code","url":"https://code.claude.com/docs/en/overview","type":"CLI","desc":"Agent de programmation travaillant dans le terminal et sur les projets.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Cline","url":"https://github.com/cline/cline","type":"Outil","desc":"Agent pour éditeur, terminal et bureau pouvant manipuler fichiers et commandes.","access":"Client plus model provider; check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Cursor","url":"https://www.cursor.com/","type":"IDE","desc":"Éditeur de code avec agent IA pour coder, déboguer et relire.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Gemini CLI","url":"https://github.com/google-gemini/gemini-cli","type":"CLI","desc":"Agent open source en terminal avec accès par API ou environnement compatible.","access":"API/Vertex or eligible enterprise; no retired consumer route","verified":"2026-09-18","source":"GitHub"},{"name":"GitHub Copilot","url":"https://github.com/features/copilot","type":"Outil","desc":"Assistance au code et agents intégrés à GitHub et aux IDE.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Goose","url":"https://github.com/aaif-goose/goose","type":"CLI","desc":"Agent local extensible, disponible en terminal et sur bureau.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Kiro","url":"https://kiro.dev","type":"IDE","desc":"Environnement AWS axé sur spécifications, code et tests.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"OpenAI Codex CLI","url":"https://openai.com/codex/","type":"CLI","desc":"Agent de programmation OpenAI utilisable localement en terminal.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Pi","url":"https://github.com/earendil-works/pi","type":"CLI","desc":"Agent terminal extensible et intégrable dans d’autres outils.","access":"MIT client; model/provider terms separate","verified":"2026-09-18","source":"GitHub"}]},{"label":"Création d’applications et d’interfaces","key":"apps","entries":[{"name":"Bolt.new","url":"https://bolt.new/","type":"Web","desc":"Crée des applications web à partir de descriptions en langage naturel.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Dyad","url":"https://github.com/dyad-sh/dyad","type":"Desktop","desc":"Crée des applications sur votre ordinateur, avec fournisseurs de modèles au choix.","access":"Check pricing; local desktop app and model-provider costs.","verified":"2026-09-18","source":"GitHub"},{"name":"Lovable","url":"https://lovable.dev/","type":"Web","desc":"Génère des applications complètes avec intégration Supabase.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Onlook","url":"https://www.onlook.com/","type":"Web","desc":"Modifie visuellement des interfaces tout en conservant l’accès au code.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Replit","url":"https://replit.com/","type":"Web","desc":"Crée et fait évoluer des applications en ligne avec un agent.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"v0","url":"https://v0.app/","type":"Web","desc":"Génération d’interfaces et de composants React avec l’IA.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"}]},{"label":"Contexte, spécifications et intégrations","key":"context","entries":[{"name":"Caliber","url":"https://github.com/caliber-ai-org/ai-setup","type":"Outil","desc":"Génère et synchronise les configurations des agents de code.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Context7","url":"https://github.com/upstash/context7","type":"MCP","desc":"Fournit aux agents une documentation actualisée des bibliothèques.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Filesystem MCP","url":"https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem","type":"MCP","desc":"Donne à un agent un accès contrôlé aux fichiers du projet.","access":"Check pricing; reference implementation, not a production-ready guarantee","verified":"2026-09-18","source":"GitHub"},{"name":"GitHub MCP","url":"https://github.com/github/github-mcp-server","type":"MCP","desc":"Connecte les agents aux dépôts, tickets et demandes de modification.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Neon","url":"https://github.com/neondatabase/mcp-server-neon","type":"MCP","desc":"Connecte les agents aux bases de données Neon.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Notion MCP","url":"https://developers.notion.com/guides/mcp/overview","type":"MCP","desc":"Permet de lire et modifier le contenu Notion depuis un agent.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"OpenSpec","url":"https://github.com/Fission-AI/OpenSpec","type":"Outil","desc":"Cadre de développement guidé par des spécifications.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Supabase MCP","url":"https://github.com/supabase/mcp","type":"MCP","desc":"Relie les agents à la base et à la configuration Supabase.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"}]},{"label":"Tests, revue et sécurité","key":"quality","entries":[{"name":"Agent QA","url":"https://github.com/vostride/agent-qa","type":"MCP","desc":"Définit et exécute des tests web et mobile en langage naturel.","access":"FSL-1.1-ALv2; source-available with competing-use restriction; model costs","verified":"2026-09-18","source":"GitHub"},{"name":"Playwright MCP (Microsoft)","url":"https://github.com/microsoft/playwright-mcp","type":"MCP","desc":"Automatise un navigateur pour tester les interfaces.","access":"Apache-2.0 client; model terms separate","verified":"2026-09-18","source":"GitHub"},{"name":"PR-Agent","url":"https://github.com/The-PR-Agent/pr-agent","type":"Outil","desc":"Assistant communautaire de revue des pull requests.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Prbl","url":"https://getprbl.com","type":"Web","desc":"Recherche des vulnérabilités dans les applications ou dépôts.","access":"Free scan and GitHub Action; paid plans for rewriter and private repos; Python/JS/TS only","verified":"2026-09-23","source":"GitHub"},{"name":"Qodo","url":"https://www.qodo.ai","type":"Outil","desc":"Analyse et revue de code assistées par IA.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Semgrep MCP","url":"https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp","type":"MCP","desc":"Analyse statique de sécurité reliée aux agents.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Sentry","url":"https://github.com/getsentry/sentry-mcp","type":"MCP","desc":"Inspection des erreurs et diagnostic des incidents.","access":"Functional Source License; source-available; check hosted terms","verified":"2026-09-18","source":"GitHub"}]},{"label":"Déploiement et exécution","key":"delivery","entries":[{"name":"Cloudflare","url":"https://github.com/cloudflare/mcp-server-cloudflare","type":"MCP","desc":"Intégration MCP pour déploiement et gestion des ressources Cloudflare.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"E2B","url":"https://github.com/e2b-dev/E2B","type":"Outil","desc":"Environnement cloud isolé pour exécuter des agents.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"},{"name":"Publish.my","url":"https://publish.my/","type":"Web","desc":"Publication de sites statiques par des agents.","access":"Free tier; static sites only; email activation","verified":"2026-09-18","source":"GitHub"},{"name":"XcodeBuildMCP","url":"https://github.com/getsentry/XcodeBuildMCP","type":"MCP","desc":"Construit, exécute et débogue des projets Apple.","access":"Check pricing","verified":"2026-09-18","source":"GitHub"}]},{"label":"Espaces de travail et suivi","key":"operations","entries":[{"name":"Delta (Zed)","url":"https://delta.dev/","type":"Desktop","desc":"Espace collaboratif pour sessions d’agents et revue de modifications.","access":"Free during public beta; paid plans planned; model costs separate","verified":"2026-09-20","source":"GitHub"},{"name":"Duckweed","url":"https://github.com/MusicMaster4/Duckweed","type":"Desktop","desc":"Espace local réunissant agents, terminal et Git.","access":"Source-available; see license; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"llm.log","url":"https://github.com/lanesket/llm.log","type":"Outil","desc":"Analyse les coûts, jetons et traces des appels aux modèles.","access":"MIT; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Parallel Code","url":"https://github.com/johannesjo/parallel-code","type":"Desktop","desc":"Exécute des agents en parallèle dans des branches de travail isolées.","access":"MIT; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Shep","url":"https://github.com/shep-ai/shep","type":"CLI","desc":"Orchestre plusieurs agents jusqu’aux commits et pull requests.","access":"MIT client; agent subscription or API costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Superagent","url":"https://github.com/pungme/superagent-desktop","type":"Desktop","desc":"Espace macOS pour agents de code et outils de navigateur.","access":"MIT; macOS Apple Silicon; model subscription separate","verified":"2026-09-18","source":"GitHub"},{"name":"usage","url":"https://github.com/aqua5230/usage","type":"Desktop","desc":"Affiche les quotas d’agents IA sur Windows et macOS.","access":"AGPL-3.0; model/provider costs separate","verified":"2026-09-18","source":"GitHub"},{"name":"Warp Terminal","url":"https://www.warp.dev/terminal","type":"Outil","desc":"Terminal orienté agents et workflows de développement.","access":"Terminal download; check AI usage pricing","verified":"2026-09-18","source":"GitHub"}]}];
+const FIXED_IDS = {"Aider":"tool-001","Claude Code":"tool-002","Cline":"tool-003","Cursor":"tool-004","Gemini CLI":"tool-005","GitHub Copilot":"tool-006","Goose":"tool-007","Kiro":"tool-008","OpenAI Codex CLI":"tool-009","Pi":"tool-010","Bolt.new":"tool-011","Dyad":"tool-012","Lovable":"tool-013","Onlook":"tool-014","Replit":"tool-015","v0":"tool-016","Caliber":"tool-017","Context7":"tool-018","Filesystem MCP":"tool-019","GitHub MCP":"tool-020","Neon":"tool-021","Notion MCP":"tool-022","OpenSpec":"tool-023","Supabase MCP":"tool-024","Agent QA":"tool-025","Playwright MCP (Microsoft)":"tool-026","PR-Agent":"tool-027","Prbl":"tool-028","Qodo":"tool-029","Semgrep MCP":"tool-030","Sentry":"tool-031","Cloudflare":"tool-032","E2B":"tool-033","Publish.my":"tool-034","XcodeBuildMCP":"tool-035","Delta (Zed)":"tool-036","Duckweed":"tool-037","llm.log":"tool-038","Parallel Code":"tool-039","Shep":"tool-040","Superagent":"tool-041","usage":"tool-042","Warp Terminal":"tool-043"};
+const seed=groups.flatMap(g=>g.entries.map(t=>({...t,toolId:FIXED_IDS[t.name],category:g.key,customFields:{}})));
+let all=seed.map(x=>({...x,version:0}));
+let comments=[];
+let selected="all",canEdit=false,apiReady=false;
+const API_BASE=""; // Renseigner l'URL publique du Worker, sans barre finale. Vide = même origine.
+const el=id=>document.getElementById(id);
+const filters=el("filters");
+const make=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
+const groupLabel=key=>groups.find(g=>g.key===key)?.label||"Autre";
+const clear=node=>node.replaceChildren();
+function button(label,action,disabled=false){const b=make("button","action",label);b.type="button";b.disabled=disabled;b.addEventListener("click",action);return b;}
+const statusBox=make("div","apiStatus","Données locales affichées. Écriture désactivée tant que l'API protégée n'est pas configurée.");
+el("catalogue").insertBefore(statusBox,el("catalogue").firstChild);
+const admin=make("div","adminActions");
+admin.append(button("Initialiser R2 (une seule fois)",initialize,true));
+statusBox.after(admin);
+const dialog=make("dialog","editorDialog");
+const content=make("div","editorInner");
+dialog.append(content);document.body.append(dialog);
+dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});
+function buildFilters(){
+  clear(filters);
+  for(const g of [{key:"all",label:"Tous les outils"},...groups]){
+    const b=make("button","filter"+(selected===g.key?" active":""),g.label);
+    b.type="button";b.setAttribute("aria-pressed",String(selected===g.key));
+    b.addEventListener("click",()=>{selected=g.key;buildFilters();render()});filters.append(b);
+  }
+}
+function render(){
+  const q=el("search").value.trim().toLocaleLowerCase("fr"),t=el("type").value;
+  const shown=all.filter(x=>(selected==="all"||x.category===selected)&&(t==="all"||x.type===t)&&[x.name,x.desc,x.access,groupLabel(x.category),x.type].join(" ").toLocaleLowerCase("fr").includes(q));
+  el("count").textContent=shown.length+" résultat"+(shown.length>1?"s":"");
+  el("empty").hidden=shown.length!==0;
+  const fragment=document.createDocumentFragment();
+  for(const x of shown){
+    const article=make("article","tool");
+    const head=make("div","toolTop");
+    head.append(make("h3","",x.name),make("span","tag",x.type));
+    article.append(head,make("p","",x.desc),make("div","access",x.access));
+    const foot=make("div","foot");
+    foot.append(make("span","",groupLabel(x.category)));
+    const a=make("a","visit","Voir l’outil ↗");
+    a.href=x.url;a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label","Ouvrir "+x.name+" dans un nouvel onglet");
+    foot.append(a);article.append(foot);
+    const actions=make("div","toolActions");
+    actions.append(button("Modifier la fiche",()=>showEditor(x.toolId),!canEdit),button("Ajouter un commentaire",()=>showComment(x.toolId),!canEdit));
+    article.append(actions);
+    const notes=comments.filter(c=>c.toolId===x.toolId);
+    if(notes.length){
+      const details=make("details","comments");
+      details.append(make("summary","",notes.length+" commentaire"+(notes.length>1?"s":"")));
+      for(const c of notes)details.append(make("p","commentText",c.text));
+      article.append(details);
+    }
+    fragment.append(article);
+  }
+  el("results").replaceChildren(fragment);
+}
+async function api(path,options={}){
+  const res=await fetch(API_BASE+path,{...options,headers:{"Content-Type":"application/json",...(options.headers||{})},credentials:"include",cache:"no-store"});
+  let data;try{data=await res.json()}catch{throw Error("Réponse du Worker invalide")}
+  if(!res.ok){const e=new Error(data.error||"Erreur HTTP "+res.status);e.status=res.status;throw e}
+  return data;
+}
+async function refresh(){
+  if(!API_BASE){statusBox.textContent="API_BASE non configurée : catalogue local en lecture seule.";return}
+  try{
+    const [state,stored]=await Promise.all([api("/api/status"),api("/api/tools")]);
+    apiReady=true;canEdit=state.editingEnabled===true;
+    if(stored.tools.length){
+      all=stored.tools;comments=stored.comments||[];
+      statusBox.textContent=canEdit?"Fiches R2 chargées. Modifications autorisées.":"Fiches R2 chargées. Modifications désactivées : authentification Access nécessaire.";
+    }else{
+      statusBox.textContent=canEdit?"R2 vide : utilisez « Initialiser R2 » une seule fois.":"R2 vide. Authentification nécessaire pour initialiser.";
+    }
+    admin.firstChild.disabled=!canEdit||stored.tools.length>0;
+    render();
+  }catch(e){canEdit=false;statusBox.textContent="API inaccessible : catalogue local en lecture seule. "+e.message;render()}
+}
+async function initialize(){
+  if(!canEdit||!apiReady||!confirm("Importer les 43 fiches locales dans R2 sans écraser les fiches existantes ?"))return;
+  try{
+    const result=await api("/api/admin/initialize",{method:"POST",body:JSON.stringify({tools:seed})});
+    alert(result.created+" fiche(s) créées. Les objets déjà présents ont été conservés.");
+    await refresh();
+  }catch(e){alert("Initialisation refusée : "+e.message)}
+}
+function closeHeader(title){
+  clear(content);const top=make("div","editorHeader");
+  top.append(make("h2","",title),button("Fermer",()=>dialog.close()));
+  content.append(top);
+}
+function formRow(label,value,type="text",max=4000){
+  const row=make("label","editorField");
+  row.append(make("span","",label));
+  const input=type==="textarea"?make("textarea",""):make("input","");
+  if(type!=="textarea")input.type=type;
+  if(type==="checkbox")input.checked=!!value;
+  else input.value=value??"";
+  if(type!=="checkbox")input.maxLength=max;
+  row.append(input);content.append(row);return input;
+}
+function showEditor(id){
+  if(!canEdit)return;
+  const item=all.find(x=>x.toolId===id);if(!item)return;
+  closeHeader("Modifier la fiche — "+item.name);
+  const values={};
+  const textFields=[["name","Nom",120],["url","URL",2048],["type","Format",40],["desc","Description",4000],["access","Accès / licence",1000],["verified","Date de vérification",32],["source","Source",500]];
+  for(const [key,label,max] of textFields)values[key]=formRow(label,item[key],key==="desc"||key==="access"?"textarea":key==="verified"?"date":"text",max);
+  const catRow=make("label","editorField");catRow.append(make("span","","Catégorie"));
+  const cat=make("select","");
+  for(const group of groups){const opt=make("option","",group.label);opt.value=group.key;opt.selected=group.key===item.category;cat.append(opt)}
+  catRow.append(cat);content.append(catRow);
+  content.append(make("h3","","Champs personnalisés"));
+  const custom=structuredClone(item.customFields||{});
+  const customArea=make("div","");content.append(customArea);
+  function drawCustom(){
+    clear(customArea);
+    for(const [key,field] of Object.entries(custom)){
+      const box=make("div","customRow");
+      box.append(make("strong","",key+" ("+field.type+")"));
+      const input=field.type==="list"?make("textarea",""):make("input","");
+      if(field.type==="boolean"){input.type="checkbox";input.checked=field.value}
+      else if(field.type==="date")input.type="date";
+      else if(field.type==="number")input.type="number";
+      else if(field.type!=="list")input.type="text";
+      if(field.type==="list")input.value=JSON.stringify(field.value);
+      else if(field.type!=="boolean")input.value=field.value;
+      input.addEventListener("change",()=>{
+        try{
+          if(field.type==="list"){const arr=JSON.parse(input.value);if(!Array.isArray(arr)||arr.some(v=>typeof v!=="string"))throw Error("Liste de textes JSON attendue");field.value=arr}
+          else if(field.type==="boolean")field.value=input.checked;
+          else if(field.type==="number"){if(!input.value.trim())throw Error("Nombre requis");field.value=Number(input.value)}
+          else field.value=input.value;
+          input.setCustomValidity("");
+        }catch(e){input.setCustomValidity(e.message)}
+      });
+      box.append(input,button("Supprimer",()=>{delete custom[key];drawCustom()}));customArea.append(box);
+    }
+  }
+  drawCustom();
+  const add=make("div","customRow");
+  const keyInput=make("input","");keyInput.placeholder="nomDuChamp";keyInput.maxLength=50;
+  const typeSel=make("select","");
+  for(const type of ["string","number","boolean","date","list"]){const opt=make("option","",type);opt.value=type;typeSel.append(opt)}
+  add.append(keyInput,typeSel,button("Ajouter un champ",()=>{
+    const key=keyInput.value.trim();
+    if(!/^[a-zA-Z][a-zA-Z0-9_-]{0,49}$/.test(key)||key in custom||["toolId","version","updatedAt","comments","categoryLabel","name","url","type","desc","access","verified","source","category"].includes(key)){alert("Nom de champ invalide ou déjà utilisé");return}
+    const t=typeSel.value;
+    custom[key]={type:t,value:t==="boolean"?false:t==="number"?0:t==="list"?[]:t==="date"?"2026-11-16":""};
+    keyInput.value="";drawCustom();
+  }));
+  content.append(add);
+  const feedback=make("p","editorFeedback","");
+  content.append(feedback);
+  content.append(button("Enregistrer dans R2",async()=>{
+    const next={toolId:item.toolId,version:item.version,category:cat.value,customFields:custom};
+    for(const [key] of textFields)next[key]=values[key].value;
+    try{
+      const u=new URL(next.url);if(!["http:","https:"].includes(u.protocol))throw Error("URL http/https obligatoire");
+      if(!next.name.trim()||!next.type.trim())throw Error("Nom et format requis");
+      for(const field of customArea.querySelectorAll("input,textarea"))if(!field.checkValidity())throw Error(field.validationMessage);
+      if(Object.entries(custom).some(([,f])=>f.type==="list"&&(!Array.isArray(f.value)||f.value.length>50)))throw Error("Liste incorrecte");
+      const out=await api("/api/tools/"+encodeURIComponent(item.toolId),{method:"PUT",body:JSON.stringify(next)});
+      all=all.map(x=>x.toolId===id?out.tool:x);render();dialog.close();
+    }catch(e){feedback.textContent=e.status===409?"Conflit : cette fiche a été modifiée ailleurs. Rechargez la page, aucune modification n'a été écrasée.":e.message}
+  }));
+  dialog.showModal();
+}
+function showComment(id){
+  if(!canEdit)return;
+  const item=all.find(x=>x.toolId===id);if(!item)return;
+  closeHeader("Ajouter un commentaire — "+item.name);
+  const input=formRow("Commentaire","", "textarea",2000);
+  const feedback=make("p","editorFeedback","");content.append(feedback);
+  content.append(button("Enregistrer le commentaire",async()=>{
+    try{
+      if(!input.value.trim())throw Error("Commentaire vide");
+      const result=await api("/api/tools/"+encodeURIComponent(id)+"/comments",{method:"POST",body:JSON.stringify({text:input.value})});
+      comments.push(result.comment);render();dialog.close();
+    }catch(e){feedback.textContent=e.message}
+  }));
+  dialog.showModal();
+}
+el("search").addEventListener("input",render);
+el("type").addEventListener("change",render);
+buildFilters();render();refresh();
+
 </script></body></html>
