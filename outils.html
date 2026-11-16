@@ -40,7 +40,7 @@ const seed=groups.flatMap(g=>g.entries.map(t=>({...t,toolId:FIXED_IDS[t.name],ca
 let all=seed.map(x=>({...x,version:0}));
 let comments=[];
 let selected="all",canEdit=false,apiReady=false;
-const API_BASE=location.origin; // Worker à router sur /api/* du même domaine que la page.
+const API_BASE="https://codex-prime3-api.boite98-git.workers.dev"; // API Cloudflare Worker.
 const el=id=>document.getElementById(id);
 const filters=el("filters");
 const make=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
